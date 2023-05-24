@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    /* background-color: red; */
+    flex-direction: column;
+    position: relative;
+}
+
+.sky{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQfE4_lHxK9cNseXnkDDs5TKxV8F1sNRynZQ&usqp=CAU");
+    height: 70vh;
+    width: 800vw;
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: absolute;
+    z-index: 5;
+    /* animation: skymove linear 10s infinite; */
+}
+
+.road{
+    background-image: url("https://t4.ftcdn.net/jpg/02/90/86/91/360_F_290869161_c3F4iLkydIr9RrBeup35Qz07QXR53MtW.jpg");
+    height: 40vh;
+    width: 800vw;
+    background-repeat: repeat-x;
+    position: absolute;
+    z-index: 4;
+    top: 65vh;
+    /* animation: track 17s linear infinite; */
+}
+
+.car{
+    display: flex;
+    position: relative;
+    height: 15vh;
+    width: 17vw;
+    background-image: url("https://i.postimg.cc/2SVfHC8d/car.png");
+    background-size: cover;
+    z-index: 10;
+    left: 15vw;
+    top: 57vh;
+}
+
+.tyre{
+    background-image: url(Tire_PNG_Clip_Art-2927.png);
+    /* background: red; */
+    width: 2.8rem;
+    top: 3.6rem;
+    left: 1.4rem;
+    height: 2.8rem;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* animation: run 1s linear infinite; */
+}
+
+.controller{
+    position: absolute;
+    z-index: 11;
+    left: 50%;
+    bottom: 10rem;
+}
+
+#wheel2{
+    left: 11.5rem;
+}
+
+input{
+    width: 20vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes track{
+    100%{
+        transform: translateX(-500vw);
+    } 
+} 
+
+@keyframes skymove{
+    100%{
+        transform: translateX(-500vw);
+    } 
+} 
+
+@keyframes run {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
